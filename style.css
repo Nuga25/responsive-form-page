@@ -1,0 +1,118 @@
+
+body{
+    background: hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-stretch: ultra-expanded;
+}
+
+a{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 100vh;
+}
+
+.f1{
+    background: hsl(248, 32%, 49%);
+    box-shadow: 0 4px rgba(0, 0, 0, 0.15);
+    color: hsl(245, 25%, 90%);
+    padding: 0.5px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#box1{
+    flex: 1;
+    padding: 40px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#box2{
+    flex: 1;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+form{
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    color: hsl(246, 25%, 77%);
+    box-shadow: 0 4px rgba(0, 0, 0, 0.15);
+}
+
+input{
+    padding: 15px;
+    width: 90%;
+    border-radius: 5px;
+    border: 0.5px hsl(245, 25%, 90%) solid;
+    outline-color: hsl(246, 25%, 77%);
+}
+
+input:required:focus:invalid {
+   content: " ";
+   background: transparent url(images/icon-error.svg) no-repeat 0 0 ;
+   background-position-x: 97%;
+   background-position-y: center;
+   border: 0.5px hsl(0, 100%, 74%) solid;
+}
+
+button{
+    width: 96%;
+    padding: 15px;
+    background: hsl(154, 59%, 51%);
+    color: hsl(245, 25%, 90%);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px hsl(154, 46%, 48%);
+}
+
+button:hover{
+    background: hsl(154, 60%, 69%);
+}
+
+.footer{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 850px) {
+    body{
+        background: hsl(0, 100%, 74%);
+        background-image: url(images/bg-intro-mobile.png);
+        text-align: center;
+        margin: 0px;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        width: auto;
+    }
+    .f1{
+        width: 100%;
+        padding: -30px;
+    }
+    form{
+        width: 90%;
+    }
+    input{
+        width: 80%;
+    }
+}
+
